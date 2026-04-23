@@ -13,6 +13,16 @@ Large language models have shown strong potential in Industry 4.0 tasks, but exi
 
 To address this, we introduce **IndKnow**, a comprehensive benchmark with progressive cognitive levels and broad industrial coverage.
 
+## Framework and Benchmark Illustration
+
+### IndKnow Pipeline
+
+![IndKnow Pipeline](./assets/figures/pipeline2.png)
+
+### Benchmark Example
+
+![IndKnow Benchmark Example](./assets/figures/benchmark-overview.png)
+
 ## Key Features
 
 - **4 progressive knowledge levels**:
