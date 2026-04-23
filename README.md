@@ -45,13 +45,59 @@ ICCG helps reveal whether a model "knows" industrial concepts but still struggle
 
 IndKnow aims to provide a standardized benchmark for industrial intelligence and support the development of robust LLM systems for real-world industry scenarios.
 
+## Repository Structure
+
+```text
+IndKnow/
+├── data/
+│   ├── README.md
+│   ├── raw/
+│   ├── processed/
+│   └── splits/
+├── src/
+│   ├── README.md
+│   ├── evaluation/
+│   ├── metrics/
+│   ├── models/
+│   └── utils/
+├── prompts/
+│   ├── README.md
+│   ├── zero_shot/
+│   └── cot/
+├── README.md
+└── LICENSE
+```
+
+### Directory Guide
+
+- `data/`: benchmark datasets and split files.
+  - `raw/`: source-format data before normalization.
+  - `processed/`: cleaned and standardized files for evaluation.
+  - `splits/`: train/validation/test or official benchmark partitions.
+- `src/`: codebase for benchmark evaluation and analysis.
+  - `evaluation/`: evaluation entry points and task-specific runners.
+  - `metrics/`: metric implementations, including ICCG.
+  - `models/`: model adapters or wrappers for unified inference.
+  - `utils/`: shared utilities (I/O, logging, formatting, etc.).
+- `prompts/`: prompt templates used in experiments.
+  - `zero_shot/`: zero-shot templates.
+  - `cot/`: Chain-of-Thought templates.
+
+### Quick Start (Planned)
+
+- Place or download benchmark files under `data/`.
+- Configure model adapters in `src/models/`.
+- Select templates from `prompts/` for zero-shot or CoT runs.
+- Run evaluation scripts in `src/evaluation/`.
+- Compute and analyze ICCG with modules in `src/metrics/`.
+
 ## Repository Status
 
 This repository is under active construction. We will release:
 
-- [ ] prompts
 - [ ] Benchmark data and split details
-- [ ] Evaluation scripts 
+- [ ] Evaluation scripts
+- [ ] Prompt templates (zero-shot / CoT)
 - [ ] Baseline results
 - [ ] ICCG computation toolkit
 - [ ] Documentation for reproduction
