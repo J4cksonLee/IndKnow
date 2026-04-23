@@ -1,1 +1,75 @@
-# IndKnow
+# IndKnow: Industrial Knowledge Evaluation Benchmark for LLMs
+
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
+
+> **IndustrialKnowEval (IndKnow)** is a TPAMI benchmark for systematically evaluating industrial knowledge capabilities of large language models (LLMs), from basic memory to engineering-level application under real-world constraints.
+
+## Overview
+
+Large language models have shown strong potential in Industry 4.0 tasks, but existing evaluations do not fully capture the gap between:
+
+- **knowledge comprehension**, and
+- **engineering-level application** in real industrial settings.
+
+To address this, we introduce **IndKnow**, a comprehensive benchmark with progressive cognitive levels and broad industrial coverage.
+
+## Key Features
+
+- **4 progressive knowledge levels**:
+  - Memory
+  - Understanding
+  - Reasoning
+  - Engineering Application
+- **43,282 multi-level samples**
+- **21 task types**
+- **7 major industrial sectors**, including:
+  - Aerospace
+  - Electric Power
+  - Metallurgy
+  - and more
+- **Rigorous quality control pipeline** with enterprise domain specialists and experienced researchers involved throughout data construction
+- **Comprehensive evaluations of 16 representative LLMs** under:
+  - Zero-shot prompting
+  - Chain-of-Thought prompting
+
+## Industrial Cognitive Capability Gap (ICCG)
+
+Based on IndKnow, we propose **ICCG**, a metric designed to quantify the performance differential between:
+
+- industrial knowledge comprehension capability, and
+- industrial engineering application capability.
+
+ICCG helps reveal whether a model "knows" industrial concepts but still struggles to operationalize them in realistic engineering contexts.
+
+## Why IndKnow Matters
+
+IndKnow aims to provide a standardized benchmark for industrial intelligence and support the development of robust LLM systems for real-world industry scenarios.
+
+## Repository Status
+
+This repository is under active construction. We will release:
+
+- [ ] Benchmark data and split details
+- [ ] Evaluation scripts and prompts
+- [ ] Baseline results
+- [ ] ICCG computation toolkit
+- [ ] Documentation for reproduction
+
+## Citation
+
+If you find this project useful, please cite our paper:
+
+```bibtex
+@article{indknow_tpami_2026,
+  title   = {IndustrialKnowEval: A Benchmark for Evaluating Industrial Knowledge Comprehension and Engineering Application in Large Language Models},
+  author  = {TBD},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+  year    = {2026}
+}
+```
+
+## Contact
+
+- Project homepage: `TBD`
+- Paper link: `TBD`
+- Maintainer: `TBD`
